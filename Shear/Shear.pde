@@ -24,11 +24,10 @@ void setup()
   stroke(231, 124, 43);
   house();
   
-  // Objeto com transformação de escala
-  // Translação utilizada para não sobrescrever objeto
+  // Objeto transladado para não sobrescrever objeto original
   pushMatrix();
   translate(80, 0);
-  scale(2.0);
+  shearX(0.2);
   stroke(122, 234, 23);
   house();
   popMatrix();
