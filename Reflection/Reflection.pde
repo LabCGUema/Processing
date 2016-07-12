@@ -6,6 +6,10 @@ void house()
   rect(12, 30, 10, 15);
 }
 
+void reflection(){
+  rotate(radians(180));
+}
+
 // Notar que as coordenadas do sistema começam em (0, 0)
 // a partir do canto superior esquerdo
 void setup()
@@ -24,11 +28,11 @@ void setup()
   stroke(231, 124, 43);
   house();
   
-  // Objeto com transformação de escala
+  // Objeto com transformação de reflexão
   // Translação utilizada para não sobrescrever objeto
   pushMatrix();
-  translate(80, 0);
-  scale(2.0);
+  translate(30, 480);
+  reflection();
   stroke(122, 234, 23);
   house();
   popMatrix();

@@ -25,10 +25,11 @@ void setup()
   house();
   
   // Objeto com transformação de escala
-  // Translação utilizada para não sobrescrever objeto
+  // Translação utilizada para não sobrescrever objeto e para
+  // Alterar a origem do sistema
   pushMatrix();
   translate(80, 0);
-  scale(2.0);
+  rotate(radians(45));
   stroke(122, 234, 23);
   house();
   popMatrix();
